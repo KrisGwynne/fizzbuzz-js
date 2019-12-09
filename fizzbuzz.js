@@ -49,24 +49,22 @@ function fizzbuzz(max) {
     }
 }
 
-// Now we run the main function...
-
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout,
-
-// });
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
 
 
-// rl.question('Please enter the maximum number:', (answer) => { 
+rl.question('Please enter the maximum number:', (max) => { 
+    rl.question('What rules do you want to implement? i.e 3, 5, 7 etc: ', (rules) => {
 
-//     console.log(`answer is ${answer}`);
-    
-    
-//     fizzbuzz(answer);
+        console.log(`Implementing rules ${rules}`);
+        
+        
 
-//     rl.close();
-// });
+        fizzbuzz(parseInt(max));
+        console.log(`This is FizzBuzz up to ${max}`);
+        rl.close();
+    });
+});
 
-
-fizzbuzz(200);

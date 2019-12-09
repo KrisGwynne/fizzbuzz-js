@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\fizzbuzz.js"
+            "program": "${workspaceFolder}\\fizzbuzz.js",
+            "console": "integratedTerminal"
         }
     ]
 }
